@@ -69,19 +69,31 @@ const Flames = () => {
     <div>
       <input
         type="text"
-        placeholder="first Name"
+        data-testid="input1"
+        name="name1"
+        placeholder="Enter first Name"
         value={fname}
         onChange={(e) => setFname(e.target.value)}
       />
       <input
         type="text"
-        placeholder="second Name"
+        data-testid="input2"
+        name="name2"
+        placeholder="Enter second Name"
         value={sname}
         onChange={(e) => setSname(e.target.value)}
       />
-      <button onClick={handleResult}>Calculate Future Relationship</button>
-      <button onClick={handleClear}>Clear</button>
-      <h1>{result}</h1>
+      <button
+        data-testid="calculate_relationship"
+        name="calculate_relationship"
+        onClick={handleResult}
+      >
+        Calculate Future Relationship
+      </button>
+      <button data-testid="clear" name="clear" onClick={handleClear}>
+        Clear
+      </button>
+      <h3 data-testid="answer">{result}</h3>
     </div>
   );
 };
