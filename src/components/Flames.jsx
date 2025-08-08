@@ -71,7 +71,7 @@ const Flames = () => {
         type="text"
         data-testid="input1"
         name="name1"
-        placeholder="Enter first Name"
+        placeholder="Enter first name"
         value={fname}
         onChange={(e) => setFname(e.target.value)}
       />
@@ -79,7 +79,7 @@ const Flames = () => {
         type="text"
         data-testid="input2"
         name="name2"
-        placeholder="Enter second Name"
+        placeholder="Enter second name"
         value={sname}
         onChange={(e) => setSname(e.target.value)}
       />
@@ -88,7 +88,7 @@ const Flames = () => {
         name="calculate_relationship"
         onClick={handleResult}
       >
-        Calculate Future Relationship
+        Calculate Relationship Future
       </button>
       <button data-testid="clear" name="clear" onClick={handleClear}>
         Clear
